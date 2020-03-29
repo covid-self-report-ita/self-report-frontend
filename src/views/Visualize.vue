@@ -46,6 +46,7 @@
             <p v-if="lastUpdate"><small>{{ $t('visualize.lastUpdate') }} {{ lastUpdate.toLocaleString() }}</small></p>
             <!--            <p>{{totalReports}} reports overall</p>-->
 
+            <daily-stats :data="data"></daily-stats>
           </div>
 
         </div>
@@ -64,8 +65,10 @@
   import flatPicker from 'vue-flatpickr-component';
   import 'flatpickr/dist/flatpickr.css';
 
+  import DailyStats from "./DailyStats";
+
   var _map = null;
-  var _data = [];
+  // var _data = [];
   var _tileLayers = [];
 
   var _today = new Date();
@@ -74,14 +77,16 @@
 
   export default {
     name: "visualize",
-    components: {flatPicker},
+    components: {DailyStats, flatPicker},
     data() {
       return {
-        dataLoaded: false,
         mapBaseLayerUrl: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
         dataSourceBaseUrl: process.env.VUE_APP_VISU_DATA_SOURCE_URL,
         geocodeFileUrl: process.env.VUE_APP_VISU_GEOCODE_URL,
         lastUpdateFileUrl: process.env.VUE_APP_VISU_LAST_UPDATE_URL,
+
+        data: null,
+        dataLoaded: false,
 
         showMerged: true,
         scaleFactor: 100,
@@ -167,6 +172,7 @@
             defaultEnabled: false,
           },
         ],
+
       };
     },
     async mounted() {
@@ -288,11 +294,11 @@
             entry.total_recovered_not_confirmed = +entry.total_recovered_not_confirmed;
             entry.total_recovered_confirmed = +entry.total_recovered_confirmed;
           }
-          _data = data;
+          this.data = data;
 
           this.dataLoaded = true;
 
-          this.allowedDates = this.computeAllowedDates(_data);
+          this.allowedDates = this.computeAllowedDates(data);
 
           this.buildLayers(null, this.dateFilter);
 
@@ -318,7 +324,7 @@
         }
 
         let totalReports = 0;
-        for (const entry of _data) {
+        for (const entry of this.data) {
 
           if (entry.date !== dateStr) {
             continue;
@@ -347,7 +353,7 @@
         console.log(totalReports);
 
         let ignored = 0;
-        for (const entry of _data) {
+        for (const entry of this.data) {
 
           if (entry.date !== dateStr) {
             continue;

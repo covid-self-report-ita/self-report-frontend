@@ -8,7 +8,7 @@
         },
         "yes": "Si",
         "no": "No",
-        "language": "Inglese"
+        "language": "Italiano"
     },
     "renewReport": {
         "comingBack": "Grazie per essere tornato",
@@ -60,7 +60,7 @@
         "sentMistakeClickHere": "clicca qui"
     },
     "visualize": {
-        "title": "Visuallizza",
+        "title": "Visualizza",
         "dataWarning": "I seguenti dati sono raccolti dalla comunità e non verificati.",
         "lastUpdate": "Ultimo aggiornamento:",
         "layerHealthy": "In salute",

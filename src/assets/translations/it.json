@@ -4,7 +4,10 @@
         "footer": {
             "support": "Ti ringraziamo per il tuo supporto!",
             "contact": "Contattaci su una di queste piattaforme.",
-            "whatsappshare": "Aggiornaci sul tuo stato di salute per contribuire alla lotta contro il Covid-19!"
+            "whatsappshare": "Aggiornaci sul tuo stato di salute per contribuire alla lotta contro il Covid-19!",
+            "ch": "Svizzera",
+            "in": "India",
+            "me": "Messico"
         },
         "yes": "Si",
         "no": "No",
@@ -20,7 +23,7 @@
     },
     "report": {
         "title": "Report",
-        "intro": "Aiutaci a combattere il Coronavirus in Svizzera comunicandoci il tuo stato di salute.",
+        "intro": "Aiutaci a combattere il Coronavirus in Italia comunicandoci il tuo stato di salute.",
         "how": "Come ti senti?",
         "healthy": "Sono in salute",
         "sick": "Sono malato",
@@ -33,13 +36,13 @@
         "symptomCough": "Tosse (secca)",
         "symptomVomit": "Vomito",
         "symptomDyspnea": "Difficoltà respiratoria",
-        "symptomWeakness": "Forte stanchezza",
+        "symptomWeakness": "Debolezza",
         "symptomHeadache": "Mal di testa",
         "symptomCold": "Raffreddore",
         "symptomDiarrhoea": "Diarrea",
         "symptomTasteSmell": "Gusto o olfatto indeboliti",
         "symptomOthers": "Altri",
-        "diagnostic": "Qual è la tua diagnosi?",
+        "diagnostic": "Hai il COVID-19?",
         "contracted": "Considerando i tuoi ultimi contatti sociali, credi di aver contratto il Covid-19?",
         "contractedNo": "No",
         "contractedProbably": "Probabilmente",
@@ -52,7 +55,7 @@
         "send": "Invia",
         "error": "Errore",
         "errorDetails": "Si è verificato un errore nell'invio dei dati.",
-        "errorClose": "Chiudere",
+        "errorClose": "Chiudi",
         "sentThanks": "Grazie",
         "sentComeBack": "Grazie per il tuo prezioso contributo. Ritorna su questo sito per comunicare se il tuo stato di salute cambia.",
         "sentSomeoneElse": "Se desideri aggiungere lo stato di salute di un altra persona, ti preghiamo di utilizzare un altro telefono, tablet o computer.",
@@ -72,16 +75,16 @@
     },
     "about": {
         "title": "Su di noi",
-        "headWho": "Siamo un team di sviluppatori svizzeri",
+        "headWho": "Siamo un team di sviluppatori italiani",
         "who": "che vuole contribuire alla valutazione della situazione attuale della pandemia COVID-19 del nostro paese.",
         "headNeedYou": "Abbiamo bisogno di voi!",
         "needYou": "La nostra app è basata sul vostro contributo... è dunque essenziale che tutti aggiornino il proprio stato di salute in caso di cambiamento e/o anormalità.",
         "headData": "Le vostre informazioni personali non saranno salvate sui nostri server",
         "data": "e tutti i dati sono anonimi. Ciò nonostante vi chiediamo di utilizzare sempre lo stesso browser: in caso contrario potrebbero risultare errori.",
-        "headDataUpdate": "In tempo reale?",
+        "headDataUpdate": "In tempo reale? Non ancora!",
         "dataUpdate": "...No! Gli aggiornamenti verranno effettuati il più spesso possibile. Ciononostante durante il lancio dell’app forse si faranno attendere un po’ di più.",
-        "headPublicData": "Per gli sviluppatori",
-        "publicData": "il nostro dataset è pubblico ed aperto nel nostro github: è a vostra disposizione per la creazione di vostre visualizzazioni eccezionali!",
+        "headPublicData": "Per altri sviluppatori,",
+        "publicData": "il nostro dataset è pubblico ed aperto nel nostro github: è a vostra disposizione per la creazione di vostre versioni migliorate o per unirvi allo sforzo di estendere il sito a più nazioni",
         "headDataCare": "A proposito,",
         "dataCare": "ricordate che il nostro dataset è basato sul contributo degli utenti; i dati non sono da ritenersi ufficiali e possono contenere errori. I dati risultanti sono a puro scopo indicativo.",
         "headImprovement": "Se avete suggerimenti",
@@ -89,5 +92,11 @@
     },
     "faq": {
         "title": "Domande frequenti"
+    },
+    "FAQ": {
+        "goalQuestion": "A che cosa serve il progetto?",
+        "goalResponse": "Il nostro obiettivo è quello di visualizzare la diffusione del Covid-19 nella nostra nazione. Come facciamo ad \"appiattire la curva\" senza avere dei dati statistici che rispecchino la situazione attuale? Aiutaci notificandoci il tuo stato di salute.",
+        "othersQuestion": "Come faccio a notificare lo stato di salute degli altri familiari?",
+        "othersResponse": "Stiamo lavorando su questo problema. Per ora, puoi utilizzare un dispositivo differente (telefono, tablet, computer) per ogni membro della famiglia"
     }
 }

@@ -91,9 +91,7 @@
         "improvement": "o volete segnalare un errore, contattateci su facebook."
     },
     "faq": {
-        "title": "Domande frequenti"
-    },
-    "FAQ": {
+        "title": "Domande frequenti",
         "goalQuestion": "A che cosa serve il progetto?",
         "goalResponse": "Il nostro obiettivo è quello di visualizzare la diffusione del Covid-19 nella nostra nazione. Come facciamo ad \"appiattire la curva\" senza avere dei dati statistici che rispecchino la situazione attuale? Aiutaci notificandoci il tuo stato di salute.",
         "othersQuestion": "Come faccio a notificare lo stato di salute degli altri familiari?",
